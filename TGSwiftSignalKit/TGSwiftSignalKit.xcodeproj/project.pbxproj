@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B53660624CA9D3600B89DA9 /* TGSwiftSignalKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B53660424CA9D3600B89DA9 /* TGSwiftSignalKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B53662724CA9D6F00B89DA9 /* Subscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53660D24CA9D6D00B89DA9 /* Subscriber.swift */; };
+		2B53662824CA9D6F00B89DA9 /* Multicast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53660E24CA9D6D00B89DA9 /* Multicast.swift */; };
+		2B53662924CA9D6F00B89DA9 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53660F24CA9D6D00B89DA9 /* Queue.swift */; };
+		2B53662A24CA9D6F00B89DA9 /* Signal_Catch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53661024CA9D6D00B89DA9 /* Signal_Catch.swift */; };
+		2B53662B24CA9D6F00B89DA9 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53661124CA9D6D00B89DA9 /* Timer.swift */; };
+		2B53662C24CA9D6F00B89DA9 /* Signal_Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53661224CA9D6D00B89DA9 /* Signal_Combine.swift */; };
+		2B53662D24CA9D6F00B89DA9 /* Signal_Reduce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53661324CA9D6D00B89DA9 /* Signal_Reduce.swift */; };
+		2B53662E24CA9D6F00B89DA9 /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53661424CA9D6D00B89DA9 /* Disposable.swift */; };
+		2B53662F24CA9D6F00B89DA9 /* Signal_Materialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53661524CA9D6D00B89DA9 /* Signal_Materialize.swift */; };
+		2B53663024CA9D6F00B89DA9 /* Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53661624CA9D6E00B89DA9 /* Lock.swift */; };
+		2B53663124CA9D6F00B89DA9 /* Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53661724CA9D6E00B89DA9 /* Bag.swift */; };
+		2B53663224CA9D6F00B89DA9 /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53661824CA9D6E00B89DA9 /* Atomic.swift */; };
+		2B53663324CA9D6F00B89DA9 /* Signal_Loop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53661924CA9D6E00B89DA9 /* Signal_Loop.swift */; };
+		2B53663424CA9D6F00B89DA9 /* QueueLocalObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53661A24CA9D6E00B89DA9 /* QueueLocalObject.swift */; };
+		2B53663524CA9D6F00B89DA9 /* Signal_Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53661B24CA9D6E00B89DA9 /* Signal_Dispatch.swift */; };
+		2B53663624CA9D6F00B89DA9 /* Signal_Timing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53661C24CA9D6E00B89DA9 /* Signal_Timing.swift */; };
+		2B53663724CA9D6F00B89DA9 /* ValuePipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53661D24CA9D6E00B89DA9 /* ValuePipe.swift */; };
+		2B53663824CA9D6F00B89DA9 /* Signal_Single.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53661E24CA9D6E00B89DA9 /* Signal_Single.swift */; };
+		2B53663924CA9D6F00B89DA9 /* Signal_SideEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53661F24CA9D6E00B89DA9 /* Signal_SideEffects.swift */; };
+		2B53663A24CA9D6F00B89DA9 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53662024CA9D6E00B89DA9 /* Promise.swift */; };
+		2B53663B24CA9D6F00B89DA9 /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53662124CA9D6E00B89DA9 /* Signal.swift */; };
+		2B53663C24CA9D6F00B89DA9 /* Signal_Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53662224CA9D6E00B89DA9 /* Signal_Mapping.swift */; };
+		2B53663D24CA9D6F00B89DA9 /* Signal_Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53662324CA9D6E00B89DA9 /* Signal_Meta.swift */; };
+		2B53663E24CA9D6F00B89DA9 /* Signal_Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53662424CA9D6E00B89DA9 /* Signal_Merge.swift */; };
+		2B53663F24CA9D6F00B89DA9 /* Signal_Take.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53662524CA9D6E00B89DA9 /* Signal_Take.swift */; };
+		2B53664024CA9D6F00B89DA9 /* ThreadPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53662624CA9D6F00B89DA9 /* ThreadPool.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2B53660124CA9D3500B89DA9 /* TGSwiftSignalKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TGSwiftSignalKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B53660424CA9D3600B89DA9 /* TGSwiftSignalKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGSwiftSignalKit.h; sourceTree = "<group>"; };
+		2B53660524CA9D3600B89DA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B53660D24CA9D6D00B89DA9 /* Subscriber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subscriber.swift; sourceTree = "<group>"; };
+		2B53660E24CA9D6D00B89DA9 /* Multicast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Multicast.swift; sourceTree = "<group>"; };
+		2B53660F24CA9D6D00B89DA9 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		2B53661024CA9D6D00B89DA9 /* Signal_Catch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signal_Catch.swift; sourceTree = "<group>"; };
+		2B53661124CA9D6D00B89DA9 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		2B53661224CA9D6D00B89DA9 /* Signal_Combine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signal_Combine.swift; sourceTree = "<group>"; };
+		2B53661324CA9D6D00B89DA9 /* Signal_Reduce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signal_Reduce.swift; sourceTree = "<group>"; };
+		2B53661424CA9D6D00B89DA9 /* Disposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disposable.swift; sourceTree = "<group>"; };
+		2B53661524CA9D6D00B89DA9 /* Signal_Materialize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signal_Materialize.swift; sourceTree = "<group>"; };
+		2B53661624CA9D6E00B89DA9 /* Lock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lock.swift; sourceTree = "<group>"; };
+		2B53661724CA9D6E00B89DA9 /* Bag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bag.swift; sourceTree = "<group>"; };
+		2B53661824CA9D6E00B89DA9 /* Atomic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Atomic.swift; sourceTree = "<group>"; };
+		2B53661924CA9D6E00B89DA9 /* Signal_Loop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signal_Loop.swift; sourceTree = "<group>"; };
+		2B53661A24CA9D6E00B89DA9 /* QueueLocalObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueLocalObject.swift; sourceTree = "<group>"; };
+		2B53661B24CA9D6E00B89DA9 /* Signal_Dispatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signal_Dispatch.swift; sourceTree = "<group>"; };
+		2B53661C24CA9D6E00B89DA9 /* Signal_Timing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signal_Timing.swift; sourceTree = "<group>"; };
+		2B53661D24CA9D6E00B89DA9 /* ValuePipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValuePipe.swift; sourceTree = "<group>"; };
+		2B53661E24CA9D6E00B89DA9 /* Signal_Single.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signal_Single.swift; sourceTree = "<group>"; };
+		2B53661F24CA9D6E00B89DA9 /* Signal_SideEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signal_SideEffects.swift; sourceTree = "<group>"; };
+		2B53662024CA9D6E00B89DA9 /* Promise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Promise.swift; sourceTree = "<group>"; };
+		2B53662124CA9D6E00B89DA9 /* Signal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signal.swift; sourceTree = "<group>"; };
+		2B53662224CA9D6E00B89DA9 /* Signal_Mapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signal_Mapping.swift; sourceTree = "<group>"; };
+		2B53662324CA9D6E00B89DA9 /* Signal_Meta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signal_Meta.swift; sourceTree = "<group>"; };
+		2B53662424CA9D6E00B89DA9 /* Signal_Merge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signal_Merge.swift; sourceTree = "<group>"; };
+		2B53662524CA9D6E00B89DA9 /* Signal_Take.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signal_Take.swift; sourceTree = "<group>"; };
+		2B53662624CA9D6F00B89DA9 /* ThreadPool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadPool.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B5365FE24CA9D3500B89DA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B5365F724CA9D3500B89DA9 = {
+			isa = PBXGroup;
+			children = (
+				2B53660324CA9D3600B89DA9 /* TGSwiftSignalKit */,
+				2B53660224CA9D3500B89DA9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2B53660224CA9D3500B89DA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B53660124CA9D3500B89DA9 /* TGSwiftSignalKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B53660324CA9D3600B89DA9 /* TGSwiftSignalKit */ = {
+			isa = PBXGroup;
+			children = (
+				2B53660424CA9D3600B89DA9 /* TGSwiftSignalKit.h */,
+				2B53660C24CA9D5C00B89DA9 /* Source */,
+				2B53660524CA9D3600B89DA9 /* Info.plist */,
+			);
+			path = TGSwiftSignalKit;
+			sourceTree = "<group>";
+		};
+		2B53660C24CA9D5C00B89DA9 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2B53661824CA9D6E00B89DA9 /* Atomic.swift */,
+				2B53661724CA9D6E00B89DA9 /* Bag.swift */,
+				2B53661424CA9D6D00B89DA9 /* Disposable.swift */,
+				2B53661624CA9D6E00B89DA9 /* Lock.swift */,
+				2B53660E24CA9D6D00B89DA9 /* Multicast.swift */,
+				2B53662024CA9D6E00B89DA9 /* Promise.swift */,
+				2B53660F24CA9D6D00B89DA9 /* Queue.swift */,
+				2B53661A24CA9D6E00B89DA9 /* QueueLocalObject.swift */,
+				2B53661024CA9D6D00B89DA9 /* Signal_Catch.swift */,
+				2B53661224CA9D6D00B89DA9 /* Signal_Combine.swift */,
+				2B53661B24CA9D6E00B89DA9 /* Signal_Dispatch.swift */,
+				2B53661924CA9D6E00B89DA9 /* Signal_Loop.swift */,
+				2B53662224CA9D6E00B89DA9 /* Signal_Mapping.swift */,
+				2B53661524CA9D6D00B89DA9 /* Signal_Materialize.swift */,
+				2B53662424CA9D6E00B89DA9 /* Signal_Merge.swift */,
+				2B53662324CA9D6E00B89DA9 /* Signal_Meta.swift */,
+				2B53661324CA9D6D00B89DA9 /* Signal_Reduce.swift */,
+				2B53661F24CA9D6E00B89DA9 /* Signal_SideEffects.swift */,
+				2B53661E24CA9D6E00B89DA9 /* Signal_Single.swift */,
+				2B53662524CA9D6E00B89DA9 /* Signal_Take.swift */,
+				2B53661C24CA9D6E00B89DA9 /* Signal_Timing.swift */,
+				2B53662124CA9D6E00B89DA9 /* Signal.swift */,
+				2B53660D24CA9D6D00B89DA9 /* Subscriber.swift */,
+				2B53662624CA9D6F00B89DA9 /* ThreadPool.swift */,
+				2B53661124CA9D6D00B89DA9 /* Timer.swift */,
+				2B53661D24CA9D6E00B89DA9 /* ValuePipe.swift */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2B5365FC24CA9D3500B89DA9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B53660624CA9D3600B89DA9 /* TGSwiftSignalKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2B53660024CA9D3500B89DA9 /* TGSwiftSignalKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B53660924CA9D3600B89DA9 /* Build configuration list for PBXNativeTarget "TGSwiftSignalKit" */;
+			buildPhases = (
+				2B5365FC24CA9D3500B89DA9 /* Headers */,
+				2B5365FD24CA9D3500B89DA9 /* Sources */,
+				2B5365FE24CA9D3500B89DA9 /* Frameworks */,
+				2B5365FF24CA9D3500B89DA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TGSwiftSignalKit;
+			productName = TGSwiftSignalKit;
+			productReference = 2B53660124CA9D3500B89DA9 /* TGSwiftSignalKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B5365F824CA9D3500B89DA9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = d;
+				TargetAttributes = {
+					2B53660024CA9D3500B89DA9 = {
+						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
+					};
+				};
+			};
+			buildConfigurationList = 2B5365FB24CA9D3500B89DA9 /* Build configuration list for PBXProject "TGSwiftSignalKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B5365F724CA9D3500B89DA9;
+			productRefGroup = 2B53660224CA9D3500B89DA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B53660024CA9D3500B89DA9 /* TGSwiftSignalKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B5365FF24CA9D3500B89DA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B5365FD24CA9D3500B89DA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B53663C24CA9D6F00B89DA9 /* Signal_Mapping.swift in Sources */,
+				2B53663724CA9D6F00B89DA9 /* ValuePipe.swift in Sources */,
+				2B53663B24CA9D6F00B89DA9 /* Signal.swift in Sources */,
+				2B53663424CA9D6F00B89DA9 /* QueueLocalObject.swift in Sources */,
+				2B53662824CA9D6F00B89DA9 /* Multicast.swift in Sources */,
+				2B53662E24CA9D6F00B89DA9 /* Disposable.swift in Sources */,
+				2B53663624CA9D6F00B89DA9 /* Signal_Timing.swift in Sources */,
+				2B53663924CA9D6F00B89DA9 /* Signal_SideEffects.swift in Sources */,
+				2B53663824CA9D6F00B89DA9 /* Signal_Single.swift in Sources */,
+				2B53663A24CA9D6F00B89DA9 /* Promise.swift in Sources */,
+				2B53663124CA9D6F00B89DA9 /* Bag.swift in Sources */,
+				2B53662A24CA9D6F00B89DA9 /* Signal_Catch.swift in Sources */,
+				2B53663224CA9D6F00B89DA9 /* Atomic.swift in Sources */,
+				2B53662924CA9D6F00B89DA9 /* Queue.swift in Sources */,
+				2B53663324CA9D6F00B89DA9 /* Signal_Loop.swift in Sources */,
+				2B53664024CA9D6F00B89DA9 /* ThreadPool.swift in Sources */,
+				2B53662D24CA9D6F00B89DA9 /* Signal_Reduce.swift in Sources */,
+				2B53662B24CA9D6F00B89DA9 /* Timer.swift in Sources */,
+				2B53663024CA9D6F00B89DA9 /* Lock.swift in Sources */,
+				2B53663E24CA9D6F00B89DA9 /* Signal_Merge.swift in Sources */,
+				2B53662724CA9D6F00B89DA9 /* Subscriber.swift in Sources */,
+				2B53663F24CA9D6F00B89DA9 /* Signal_Take.swift in Sources */,
+				2B53663D24CA9D6F00B89DA9 /* Signal_Meta.swift in Sources */,
+				2B53663524CA9D6F00B89DA9 /* Signal_Dispatch.swift in Sources */,
+				2B53662F24CA9D6F00B89DA9 /* Signal_Materialize.swift in Sources */,
+				2B53662C24CA9D6F00B89DA9 /* Signal_Combine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2B53660724CA9D3600B89DA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2B53660824CA9D3600B89DA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2B53660A24CA9D3600B89DA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM292KQK2W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TGSwiftSignalKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.macostutorial.buck.TGSwiftSignalKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B53660B24CA9D3600B89DA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM292KQK2W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TGSwiftSignalKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.macostutorial.buck.TGSwiftSignalKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B5365FB24CA9D3500B89DA9 /* Build configuration list for PBXProject "TGSwiftSignalKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B53660724CA9D3600B89DA9 /* Debug */,
+				2B53660824CA9D3600B89DA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B53660924CA9D3600B89DA9 /* Build configuration list for PBXNativeTarget "TGSwiftSignalKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B53660A24CA9D3600B89DA9 /* Debug */,
+				2B53660B24CA9D3600B89DA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B5365F824CA9D3500B89DA9 /* Project object */;
+}
